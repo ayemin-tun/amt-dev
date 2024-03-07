@@ -10,7 +10,6 @@ const ScrollSection = () => {
     const count = 5;
     const total = count * 100;
     const translateX = 0 - (total - 100) + 'vw';
-    const innerScrollClass = 'h-[100vh] w-[' + total + 'vw] flex relative';
     gsap.registerPlugin(ScrollTrigger);
 
     useEffect(() => {
