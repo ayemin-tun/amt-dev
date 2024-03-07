@@ -4,15 +4,17 @@ export const metadata = {
 }
 import Navigation from "@/components/navigation/Navigation"
 import "./globals.css"
-import BackgroundImage from "@/components/BackgroundImage"
+import Template from "./template"
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Navigation />
-        <main>{children}</main>
-      </body>
+      <Template>
+        <body>
+          <Navigation />
+          <main>{children}</main>
+        </body>
+      </Template>
     </html>
   )
 }

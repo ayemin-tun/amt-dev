@@ -1,6 +1,5 @@
-import Image from 'next/image'
-import React from 'react'
 import bgImage from '@/public/background.jpg';
+import Image from 'next/image';
 const BackgroundImage = () => {
     return <Image
         src={bgImage}

@@ -37,5 +37,10 @@ const NavAnimations = {
   exit: {
     y: -50,
     opacity: 0,
+    transition: {
+      type: "spring",
+      damping: 10,
+      stiffness: 100,
+    },
   },
 };

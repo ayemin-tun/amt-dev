@@ -1,8 +1,7 @@
 "use client";
-import React from "react";
-import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { useEffect, useRef } from "react";
 import BackgroundImage from "./BackgroundImage";
 
 const ScrollSection = () => {
@@ -45,7 +44,7 @@ const ScrollSection = () => {
         for (let i = 1; i <= count; i++) {
             sections.push(
                 <div key={i} className={` h-[100vh] w-screen flex justify-center items-center border`}>
-                    <h3 className="text-white font-bold text-lg">Section {i}</h3>
+                    <h3 className="text-white font-bold text-lg" data-aos="fade-up">Section {i}</h3>
                 </div>
             );
         }
