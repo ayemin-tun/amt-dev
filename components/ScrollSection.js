@@ -3,6 +3,7 @@ import React from "react";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import BackgroundImage from "./BackgroundImage";
 
 const ScrollSection = () => {
     const sectionRef = useRef(null);
@@ -43,7 +44,7 @@ const ScrollSection = () => {
 
         for (let i = 1; i <= count; i++) {
             sections.push(
-                <div key={i} className={`bg-red-300 h-[100vh] w-screen flex justify-center items-center border`}>
+                <div key={i} className={` h-[100vh] w-screen flex justify-center items-center border`}>
                     <h3 className="text-white font-bold text-lg">Section {i}</h3>
                 </div>
             );
@@ -55,6 +56,7 @@ const ScrollSection = () => {
     return (
         <div className="w-full bg-gray-400 overflow-hidden">
             <div ref={triggerRef}>
+                <BackgroundImage />
                 <div ref={sectionRef} className={`h-[100vh] w-[500vw] flex relative`}>
                     {generateSections(count)}
                 </div>

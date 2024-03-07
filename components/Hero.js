@@ -1,8 +1,10 @@
+import BackgroundImage from "./BackgroundImage";
 import ShowAnimation from "./ShowAnimation";
 
 const Hero = () => {
     return (
         <header className="w-full h-screen flex justify-center items-center">
+            <BackgroundImage />
             <div>
                 <ShowAnimation delay={0.4}>
                     <h1 className="font-extrabold text-8xl mb-2 text-white">John Doe</h1>
