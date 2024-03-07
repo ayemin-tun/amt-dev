@@ -56,7 +56,7 @@ const ScrollSection = () => {
     return (
         <div className="w-full bg-gray-400 overflow-hidden">
             <div ref={triggerRef}>
-                <div ref={sectionRef} className={innerScrollClass}>
+                <div ref={sectionRef} className={`h-[100vh] w-[500vw] flex relative`}>
                     {generateSections(count)}
                 </div>
             </div>
