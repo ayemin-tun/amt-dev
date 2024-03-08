@@ -1,3 +1,4 @@
+import LightDarkToggle from "./LightDarkToogle";
 import NavigationLinks from "./NavigationLinks";
 
 const FixedNavigation = () => {
@@ -7,9 +8,7 @@ const FixedNavigation = () => {
         <div className="flex gap-3">
          <NavigationLinks/>
         </div>
-        <div>
-          lignt/dark
-        </div>
+        <LightDarkToggle/>
       </div>
     );
   };

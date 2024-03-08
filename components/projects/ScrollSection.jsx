@@ -2,7 +2,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useEffect, useRef } from "react";
-import BackgroundImage from "./BackgroundImage";
+import BackgroundImage from "../BackgroundImage";
 
 const ScrollSection = () => {
     const sectionRef = useRef(null);
