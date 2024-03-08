@@ -53,7 +53,7 @@ const ScrollSection = () => {
     };
 
     return (
-        <div className="w-full bg-gray-400 overflow-hidden">
+        <div className="w-full bg-gray-400 overflow-hidden"  id="projects" >
             <div ref={triggerRef}>
                 <BackgroundImage />
                 <div ref={sectionRef} className={`h-[100vh] w-[500vw] flex relative`}>

@@ -8,15 +8,19 @@ const NavigationLinks = () => {
     },
     {
       title: "About",
-      path: "/",
+      path: "/#about",
+    },
+    {
+      title:"Skills",
+      path: '/#skills'
     },
     {
       title: "Projects",
-      path: "/",
+      path: "/#projects",
     },
     {
       title: "Contact",
-      path: "/",
+      path: "/#contact",
     },
   ];
   return (
