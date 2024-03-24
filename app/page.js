@@ -1,7 +1,6 @@
 import About from "@/components/about/About"
 import Contact from "@/components/contact/Contact"
 import Hero from "@/components/home/Hero"
-import ScrollSection from "@/components/projects/ScrollSection"
 import Skills from "@/components/skills/Skills"
 
 const page = () => {
@@ -10,7 +9,7 @@ const page = () => {
       <Hero />
       <About />
       <Skills />
-      <ScrollSection />
+      {/* <ScrollSection /> */}
       <Contact />
     </div>
   )

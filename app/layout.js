@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="!scroll-smooth">
 
       <Template>
-        <body className="bg-slate-300 dark:bg-slate-800">
+        <body className="bg-white dark:bg-slate-800">
           <ThemeProviderSection>
             <Navigation />
             <main>{children}</main>

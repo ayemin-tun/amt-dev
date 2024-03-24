@@ -5,28 +5,33 @@ const NavigationLinks = () => {
     {
       title: "Home",
       path: "/",
+      id: "home",
     },
     {
       title: "About",
       path: "/#about",
+      id: "about",
     },
     {
-      title:"Skills",
-      path: '/#skills'
+      title: "Skills",
+      path: "/#skills",
+      id: "skills",
     },
     {
       title: "Projects",
       path: "/#projects",
+      id: "projects",
     },
     {
       title: "Contact",
       path: "/#contact",
+      id: "contact",
     },
   ];
   return (
     <>
       {links.map((link, index) => (
-        <Link key={index} href={link.path}>
+        <Link key={index} href={link.path} className="active" to={link.id}>
           {link.title}
         </Link>
       ))}

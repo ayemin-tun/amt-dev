@@ -10,7 +10,7 @@
     "javascript.updateImportsOnFileMove.enabled": "prompt",
     "typescript.updateImportsOnFileMove.enabled": "prompt",
     "[javascriptreact]": {
-      "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
       "editor.formatOnSave": true,
       "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "explicit",
