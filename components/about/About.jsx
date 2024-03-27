@@ -1,10 +1,70 @@
+import profile from "@/public/profile.jpg";
+import Image from "next/image";
+import PageHeader from "../pageHeader";
 const About = () => {
   return (
-    <header className="w-full h-screen flex justify-center items-center bg-red-400" id="about" >
-      <div className="w-[40rem]">
-        <h1>About</h1>
+    <div
+      className="w-full h-auto md:h-screen mx-auto md:px-28 px-8 py-16 dark:bg-slate-800"
+      id="about"
+    >
+      <div className="w-full md:flex ">
+        <div className="md:w-1/5 w-full md:h-[80vh] flex justify-center items-start border-r-2 border-gray-400">
+          <PageHeader>About Us</PageHeader>
+        </div>
+        <div className="md:w-4/5 w-full h-auto p-5">
+          <div className="w-full flex md:justify-start justify-center">
+            <Image
+              src={profile}
+              alt="profile"
+              width={176}
+              height={176}
+              className="w-44 h-44 border-8 border-gray-600 dark:border-slate-300 bg-gray-400 transition-colors duration-500"
+              data-aos="zoom-in"
+            />
+          </div>
+
+          <h1 className="text-white font-bold text-2xl mt-2">Hello World,</h1>
+          <p className="mt-3 text-pretty dark:text-white transition-colors duration-500">
+            Hi, I&apos;m{" "}
+            <span className="text-blue-700 dark:text-orange-500 font-bold uppercase transition-colors duration-500">
+              Aye Min Tun
+            </span>
+            , a 23-year-old junior web developer. I&apos;m enthusiastic about
+            problem-solving and communication. With a portfolio of projects,
+            I&apos;m eager to apply my skills and expand my web development
+            expertise on real-world projects.
+          </p>
+
+          <div className="grid md:grid-cols-2 grid-cols-1 mt-2 dark:text-white transition-colors duration-500">
+            <div>
+              <p>
+                Name : <span className="font-medium">Aye Min Tun</span>
+              </p>
+              <p>
+                Birthday : <span className="font-medium">4 April, 2000</span>
+              </p>
+            </div>
+            <div>
+              <p>
+                Address : <span className="font-medium">Yangon</span>
+              </p>
+              <p>
+                Birthday : <span className="font-medium">4 April, 2000</span>
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-3 mt-5">
+            <button className="px-4 py-2 bg-orange-600 hover:bg-blue-700 duration-300 transition-transform hover:-translate-y-2 text-white text-sm hover:animate-bounce ">
+              Download CV
+            </button>
+            <button className="px-4 py-2 bg-blue-700 hover:bg-orange-600 duration-300 transition-transform hover:-translate-y-2 text-white text-sm  hover:animate-bounce">
+              Hire Me
+            </button>
+          </div>
+        </div>
       </div>
-    </header>
+    </div>
   );
 };
 
