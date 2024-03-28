@@ -13,7 +13,7 @@ const SkillAnimatedProgress = ({ skill, percent, isAnimate }) => {
             scale: 1,
             opacity: 1,
             transition: {
-              delay: 1,
+              delay: 0.3,
             },
           },
         }}
@@ -29,7 +29,7 @@ const SkillAnimatedProgress = ({ skill, percent, isAnimate }) => {
           },
           visible: {
             width: `${percent}%`,
-            transition: { type: "spring", delay: 1 },
+            transition: { type: "spring", delay: 0.3 },
             ease: "ease",
           },
         }}
@@ -48,7 +48,7 @@ const SkillAnimatedProgress = ({ skill, percent, isAnimate }) => {
               scale: 1,
               opacity: 1,
               transition: {
-                delay: 1,
+                delay: 0.3,
               },
             },
           }}

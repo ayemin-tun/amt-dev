@@ -3,7 +3,7 @@ import ContactIconBox from "./ContactIconBox";
 const Hero = () => {
   return (
     <header className="w-full h-screen dark:bg-slate-800 flex justify-center items-center dark:text-white transition-colors duration-500">
-      <div className="w-[40rem]">
+      <div className="w-[40rem] bg-yellow-50">
         <h1
           className="font-extrabold md:text-3xl lg:text-5xl text-2xl mb-2 text-center"
           data-aos="fade-right"

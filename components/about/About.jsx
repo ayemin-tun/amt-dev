@@ -1,6 +1,6 @@
 import profile from "@/public/profile.jpg";
 import Image from "next/image";
-import PageHeader from "../pageHeader";
+import PageHeader from "../PageHeader";
 const About = () => {
   return (
     <div
@@ -49,16 +49,16 @@ const About = () => {
                 Address : <span className="font-medium">Yangon</span>
               </p>
               <p>
-                Birthday : <span className="font-medium">4 April, 2000</span>
+                Email : <span className="font-medium">amtamt547@gmail.com</span>
               </p>
             </div>
           </div>
 
           <div className="flex gap-3 mt-5">
-            <button className="px-4 py-2 bg-orange-600 hover:bg-blue-700 duration-300 transition-transform hover:-translate-y-2 text-white text-sm hover:animate-bounce ">
+            <button className="px-4 py-2 bg-gray-600 hover:bg-slate-200 duration-300 transition-transform hover:-translate-y-2 text-white text-sm hover:animate-bounce hover:text-black ">
               Download CV
             </button>
-            <button className="px-4 py-2 bg-blue-700 hover:bg-orange-600 duration-300 transition-transform hover:-translate-y-2 text-white text-sm  hover:animate-bounce">
+            <button className="px-4 py-2 bg-slate-200 hover:bg-gray-600 duration-300 transition-transform hover:-translate-y-2 hover:text-white text-sm  hover:animate-bounce">
               Hire Me
             </button>
           </div>

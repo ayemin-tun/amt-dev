@@ -1,4 +1,4 @@
-import PageHeader from "../pageHeader";
+import PageHeader from "../PageHeader";
 import SkillsSection from "./SkillsSection";
 const Skills = () => {
   return (

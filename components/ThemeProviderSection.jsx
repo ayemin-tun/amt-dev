@@ -1,10 +1,12 @@
 "use client";
 import { ThemeProvider } from "next-themes";
 
-const ThemeProviderSection = ({children}) => {
+const ThemeProviderSection = ({ children }) => {
   return (
-    <ThemeProvider attribute="class">{children}</ThemeProvider>
-  )
-}
+    <ThemeProvider attribute="class" defaultTheme="dark">
+      {children}
+    </ThemeProvider>
+  );
+};
 
-export default ThemeProviderSection
+export default ThemeProviderSection;

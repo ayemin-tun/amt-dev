@@ -37,7 +37,7 @@ const SkillsSection = () => {
       <div className="flex justify-center my-4">
         <button
           className={`px-3 py-1 m-0 cursor-pointer ${
-            allSkills ? "bg-white text-black" : "bg-black text-white"
+            allSkills ? "bg-white text-black" : "bg-gray-700 text-white"
           } rounded-s-md`}
           onClick={() => setAllSKills(false)}
         >
@@ -45,7 +45,7 @@ const SkillsSection = () => {
         </button>
         <button
           className={`px-3 py-1 m-0 ${
-            allSkills ? "bg-black text-white" : "bg-white text-black"
+            allSkills ? "bg-gray-700 text-white" : "bg-white text-black"
           } rounded-e-md`}
           onClick={() => handleAllSkillsClick()}
         >
@@ -55,7 +55,7 @@ const SkillsSection = () => {
       {!allSkills && (
         <>
           <div className="mt-14">
-            <div className="flex flex-wrap gap-2 md:justify-end justify-center items-center">
+            <div className="flex flex-wrap gap-2 md:justify-end justify-start items-center">
               {skills.map((sk, index) => (
                 <ShowAnimation key={index}>
                   <div
