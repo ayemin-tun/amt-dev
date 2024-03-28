@@ -4,11 +4,11 @@ import PageHeader from "../PageHeader";
 const About = () => {
   return (
     <div
-      className="w-full h-auto md:h-screen mx-auto md:px-28 px-8 py-16 dark:bg-slate-800"
+      className="w-full h-auto md:min-h-screen md:px-28 px-8 py-16 dark:bg-slate-800"
       id="about"
     >
       <div className="w-full md:flex ">
-        <div className="md:w-1/5 w-full md:h-[80vh] flex justify-center items-start border-r-2 border-gray-400">
+        <div className="md:w-1/5 w-full h-auto flex justify-center items-start border-r-2 border-gray-400">
           <PageHeader>About Us</PageHeader>
         </div>
         <div className="md:w-4/5 w-full h-auto p-5">

@@ -19,7 +19,7 @@ const SkillsSection = () => {
 
   const [skill, setSkill] = useState(null);
   const [percent, setPercent] = useState(null);
-  const [animate, setAnimate] = useState(false);
+  const [animate, setAnimate] = useState(true);
   const [allSkills, setAllSKills] = useState(true);
   // Function to handle click event and update state
   const handleSkillClick = (name, percent) => {
