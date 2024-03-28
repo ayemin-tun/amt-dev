@@ -2,7 +2,10 @@ import Link from "next/link";
 
 const ContactIconBox = () => {
   return (
-    <div className="flex gap-4 justify-center pt-4" data-aos="fade-left">
+    <div
+      className="flex gap-4 md:justify-center pt-4 md:px-1 px-6"
+      data-aos="fade-left"
+    >
       {/* Linkedin profile */}
       <Link href="https://www.linkedin.com/in/aye-min-tun-268b9328a/">
         <svg
