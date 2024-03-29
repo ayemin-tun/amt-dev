@@ -12,7 +12,7 @@ const Projects = () => {
         <div className="md:w-4/5 w-full md:max-h-[84vh]  md:overflow-scroll p-5 cursor-s-resize">
           <div
             className="w-full md:h-[80vh] h-auto bg-red-200 mb-2"
-            id="project1"
+            id="project"
           >
             Projects 1
           </div>
