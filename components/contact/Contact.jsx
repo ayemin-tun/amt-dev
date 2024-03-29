@@ -1,4 +1,5 @@
 import PageHeader from "../PageHeader";
+import ContactForm from "./ContactForm";
 const Contact = () => {
   return (
     <div
@@ -22,39 +23,8 @@ const Contact = () => {
           <h1 className="my-3 dark:text-white duration-500 transition-colors md:text-2xl font-bold uppercase">
             Get In Touch
           </h1>
-          <form action="">
-            <div className="flex flex-col gap-1 my-2">
-              <label className="">Full Name</label>
-              <input
-                type="text"
-                name="name"
-                id=""
-                className="md:w-[70%] w-full dark:border-0 border-2 border-gray-400 text-base p-1"
-              />
-            </div>
-            <div className="flex flex-col gap-1 my-2">
-              <label className="">Email</label>
-              <input
-                type="email"
-                name="name"
-                id=""
-                className="md:w-[70%] w-full dark:border-0 border-2 border-gray-400 text-base p-1"
-              />
-            </div>
-            <div className="flex flex-col gap-1 my-2">
-              <label className="">Message</label>
-              <textarea
-                rows="4"
-                type="email"
-                name="name"
-                id=""
-                className="md:w-[70%] w-full dark:border-0 border-2 border-gray-400 text-base p-1"
-              ></textarea>
-            </div>
-            <button className=" py-3 bg-gray-600 text-white md:w-[70%] w-full">
-              Send
-            </button>
-          </form>
+
+          <ContactForm />
         </div>
 
         <div className="md:w-1/5 w-full md:h-auto md:flex hidden justify-center items-start border-l-2 border-gray-400">
