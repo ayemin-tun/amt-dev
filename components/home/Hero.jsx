@@ -19,7 +19,7 @@ const Hero = () => {
         </h2>
         <p
           className="lg:text-medium text-sm md:text-center container mx-auto md:px-10 px-6"
-          data-aos="fade-right"
+          data-aos="fade-left"
         >
           My mission is to design and develop a website that you and your
           audience love.

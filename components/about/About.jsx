@@ -23,8 +23,13 @@ const About = () => {
             />
           </div>
 
-          <h1 className="text-white font-bold text-2xl mt-2">Hello World,</h1>
-          <p className="mt-3 text-pretty dark:text-white transition-colors duration-500">
+          <h1 className="text-white font-bold text-2xl mt-2" data-aos="zoom-in">
+            Hello World,
+          </h1>
+          <p
+            className="mt-3 text-pretty dark:text-white transition-colors duration-500"
+            data-aos="zoom-in"
+          >
             Hi, I&apos;m{" "}
             <span className="text-blue-700 dark:text-orange-500 font-bold uppercase transition-colors duration-500">
               Aye Min Tun
@@ -35,7 +40,10 @@ const About = () => {
             expertise on real-world projects.
           </p>
 
-          <div className="grid md:grid-cols-2 grid-cols-1 mt-2 dark:text-white transition-colors duration-500">
+          <div
+            className="grid md:grid-cols-2 grid-cols-1 mt-2 dark:text-white transition-colors duration-500"
+            data-aos="zoom-in"
+          >
             <div>
               <p>
                 Name : <span className="font-medium">Aye Min Tun</span>
@@ -54,7 +62,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="flex gap-3 mt-5">
+          <div className="flex gap-3 mt-5" data-aos="zoom-in">
             <button className="px-4 py-2 bg-gray-600 hover:bg-slate-200 duration-300 transition-transform hover:-translate-y-2 text-white text-sm hover:animate-bounce hover:text-black ">
               Download CV
             </button>

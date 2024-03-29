@@ -20,7 +20,7 @@ const SkillsSection = () => {
   const [skill, setSkill] = useState(null);
   const [percent, setPercent] = useState(null);
   const [animate, setAnimate] = useState(true);
-  const [allSkills, setAllSKills] = useState(true);
+  const [allSkills, setAllSKills] = useState(false);
   // Function to handle click event and update state
   const handleSkillClick = (name, percent) => {
     setAnimate(true);
@@ -55,7 +55,10 @@ const SkillsSection = () => {
       {!allSkills && (
         <>
           <div className="mt-14">
-            <div className="flex flex-wrap gap-2 md:justify-end justify-start items-center">
+            <div
+              className="flex flex-wrap gap-2 md:justify-end justify-start items-center"
+              data-aos="zoom-out"
+            >
               {skills.map((sk, index) => (
                 <ShowAnimation key={index}>
                   <div
