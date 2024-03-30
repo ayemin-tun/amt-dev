@@ -25,7 +25,7 @@ const Contact = () => {
           <ContactForm />
         </div>
 
-        <div className="md:w-1/5 w-full md:h-auto md:flex hidden justify-center items-start border-l-2 border-gray-400">
+        <div className="md:w-1/5 w-full md:h-auto md:flex flex-col hidden justify-start items-center border-l-2 border-gray-400">
           <PageHeader>Contact</PageHeader>
         </div>
       </div>

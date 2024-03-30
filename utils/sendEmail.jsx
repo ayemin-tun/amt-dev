@@ -7,6 +7,7 @@ export const sendEmail = async (data) =>
       Accept: "application/json",
     },
   }).then((res) => {
-    if (!res.ok) throw new Error("Fail To Send message");
+    if (!res.ok)
+      throw new Error("Fail To Send message! Please try again later");
     return res.json();
   });

@@ -37,7 +37,9 @@ const SkillsSection = () => {
       <div className="flex justify-center my-4">
         <button
           className={`px-3 py-1 m-0 cursor-pointer ${
-            allSkills ? "bg-white text-black" : "bg-gray-700 text-white"
+            allSkills
+              ? "bg-white text-black dark:bg-gray-700 dark:text-white"
+              : "bg-gray-700 dark:bg-white text-white dark:text-black"
           } rounded-s-md`}
           onClick={() => setAllSKills(false)}
         >
@@ -45,7 +47,9 @@ const SkillsSection = () => {
         </button>
         <button
           className={`px-3 py-1 m-0 ${
-            allSkills ? "bg-gray-700 text-white" : "bg-white text-black"
+            allSkills
+              ? "bg-gray-700 text-white dark:bg-white dark:text-black"
+              : "bg-white dark:bg-gray-700 text-black dark:text-white"
           } rounded-e-md`}
           onClick={() => handleAllSkillsClick()}
         >
