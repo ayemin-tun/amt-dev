@@ -10,8 +10,10 @@ export const getEmailSendTime = () => {
 };
 
 export const setEmailSendTime = (sendTime) => {
-    const oneDay = 24 * 60 * 60 * 1000; //one day
-    cookies().set('emailSendTime', sendTime, { expires: Date.now() - oneDay });
+    cookies().set({
+        name: "emailSendTime",
+        value: sendTime,
+    });
 
 }
 

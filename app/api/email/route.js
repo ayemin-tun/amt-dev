@@ -10,8 +10,14 @@ export async function POST(req) {
         try {
             await transporter.sendMail({
                 ...mailOptions,
-                subject: "New Email Send from Contact",
-                html: `<h4>Contact Email</h4><p>Name: ${data.name}<br/>Email: <a href="mailto:${data.email}">${data.email}</a><br/><p>${data.message}</p></p>`
+                subject: `Portfolio Contact Email from ${data.email}`,
+                html: `<div style="border:1px solid black; padding:15px;border-color:gray;border-radius:10px;">
+                            <h2>Contact Email</h2><hr>
+                            <p>Name: ${data.name}</p>
+                            <p>Email: <a href="mailto:${data.email}">${data.email}</a></p>
+                            <h4>Message:</h4>
+                            <p>${data.message}</p>
+                        </div>`
             });
             return NextResponse.json({ success: true }, { status: 200 })
         } catch (error) {

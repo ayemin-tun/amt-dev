@@ -10,11 +10,10 @@ const ContactForm = () => {
   const { register, handleSubmit, reset } = useForm();
   const [isSending, setIsSending] = useState(false);
   const onSubmit = async (formData) => {
-    const currentTime = new Date().getTime();
     setIsSending(true);
     try {
       await sendEmail(formData);
-      toast.success("Email Successfully send");
+      toast.success("Thank you for sending the email. I will reply soon.");
     } catch (error) {
       toast.error(error.message);
     }
