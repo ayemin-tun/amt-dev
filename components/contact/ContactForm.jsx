@@ -1,18 +1,24 @@
 "use client";
 
 import { sendEmail } from "@/utils/sendEmail";
+import { useFormStatus } from "react-dom";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 
 const ContactForm = () => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
+  const { pending } = useFormStatus();
 
   const onSubmit = (formData) => {
+    const currentTime = new Date().getTime();
     sendEmail(formData);
+    toast.success("Email Successfully send");
+    reset();
   };
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="flex flex-col gap-1 my-2">
+        <div className="flex flex-col gap-1 my-2" data-aos="fade-left">
           <label className="">Full Name</label>
           <input
             type="text"
@@ -22,7 +28,7 @@ const ContactForm = () => {
             {...register("name", { required: true })}
           />
         </div>
-        <div className="flex flex-col gap-1 my-2">
+        <div className="flex flex-col gap-1 my-2" data-aos="fade-right">
           <label className="">Email</label>
           <input
             type="email"
@@ -32,7 +38,7 @@ const ContactForm = () => {
             {...register("email", { required: true })}
           />
         </div>
-        <div className="flex flex-col gap-1 my-2">
+        <div className="flex flex-col gap-1 my-2" data-aos="fade-left">
           <label className="">Message</label>
           <textarea
             rows="4"
@@ -42,8 +48,11 @@ const ContactForm = () => {
             {...register("message", { required: true })}
           ></textarea>
         </div>
-        <button className=" py-3 bg-gray-600 text-white md:w-[70%] w-full">
-          Send
+        <button
+          className=" py-3 bg-gray-600 text-white md:w-[70%] w-full"
+          data-aos="zoom-in"
+        >
+          {pending ? "Sending .." : "Send"}
         </button>
       </form>
     </>

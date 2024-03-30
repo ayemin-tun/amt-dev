@@ -4,6 +4,7 @@ export const metadata = {
 }
 import ThemeProviderSection from "@/components/ThemeProviderSection"
 import Navigation from "@/components/navigation/Navigation"
+import { Toaster } from "react-hot-toast"
 import "./globals.css"
 import Template from "./template"
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <body className="bg-white dark:bg-slate-800">
           <ThemeProviderSection>
             <Navigation />
+            <Toaster position="top-right" />
             <main>{children}</main>
           </ThemeProviderSection>
         </body>

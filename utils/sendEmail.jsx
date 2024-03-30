@@ -1,7 +1,9 @@
-export const sendEmail = async (data) => {
-  const name = data.name;
-  const email = data.email;
-  const message = data.message;
-
-  alert("hello");
-};
+export const sendEmail = async (data) =>
+  fetch("/api/email", {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+  });
