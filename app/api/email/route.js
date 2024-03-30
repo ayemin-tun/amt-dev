@@ -11,7 +11,7 @@ export async function POST(req) {
             await transporter.sendMail({
                 ...mailOptions,
                 subject: "New Email Send from Contact",
-                html: "<h1>" + data.name + "</h1> <p>SOme Body Test</p>"
+                html: `<h4>Contact Email</h4><p>Name: ${data.name}<br/>Email: <a href="mailto:${data.email}">${data.email}</a><br/><p>${data.message}</p></p>`
             });
             return NextResponse.json({ success: true }, { status: 200 })
         } catch (error) {

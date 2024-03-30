@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <body className="bg-white dark:bg-slate-800">
           <ThemeProviderSection>
             <Navigation />
-            <Toaster position="top-right" />
+            <Toaster position="bottom-left" />
             <main>{children}</main>
           </ThemeProviderSection>
         </body>

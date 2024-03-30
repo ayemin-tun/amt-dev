@@ -1,24 +1,29 @@
 "use client";
 
 import { sendEmail } from "@/utils/sendEmail";
-import { useFormStatus } from "react-dom";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 
 const ContactForm = () => {
   const { register, handleSubmit, reset } = useForm();
-  const { pending } = useFormStatus();
-
-  const onSubmit = (formData) => {
+  const [isSending, setIsSending] = useState(false);
+  const onSubmit = async (formData) => {
     const currentTime = new Date().getTime();
-    sendEmail(formData);
-    toast.success("Email Successfully send");
+    setIsSending(true);
+    try {
+      await sendEmail(formData);
+      toast.success("Email Successfully send");
+    } catch (error) {
+      toast.error(error.message);
+    }
     reset();
+    setIsSending(false);
   };
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="flex flex-col gap-1 my-2" data-aos="fade-left">
+      <form onSubmit={handleSubmit(onSubmit)} data-aos="zoom-in">
+        <div className="flex flex-col gap-1 my-2">
           <label className="">Full Name</label>
           <input
             type="text"
@@ -28,7 +33,7 @@ const ContactForm = () => {
             {...register("name", { required: true })}
           />
         </div>
-        <div className="flex flex-col gap-1 my-2" data-aos="fade-right">
+        <div className="flex flex-col gap-1 my-2">
           <label className="">Email</label>
           <input
             type="email"
@@ -38,7 +43,7 @@ const ContactForm = () => {
             {...register("email", { required: true })}
           />
         </div>
-        <div className="flex flex-col gap-1 my-2" data-aos="fade-left">
+        <div className="flex flex-col gap-1 my-2">
           <label className="">Message</label>
           <textarea
             rows="4"
@@ -48,11 +53,9 @@ const ContactForm = () => {
             {...register("message", { required: true })}
           ></textarea>
         </div>
-        <button
-          className=" py-3 bg-gray-600 text-white md:w-[70%] w-full"
-          data-aos="zoom-in"
-        >
-          {pending ? "Sending .." : "Send"}
+        <button className=" py-3 bg-gray-600 text-white md:w-[70%] w-full">
+          {isSending ? "Sending..." : "Send"}{" "}
+          {/* Change button text based on sending state */}
         </button>
       </form>
     </>
