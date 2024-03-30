@@ -14,20 +14,20 @@ const LoadingSpin = () => {
           fy=".3125"
           gradientTransform="scale(1.5)"
         >
-          <stop offset="0" stop-color="#F2FFEE"></stop>
-          <stop offset=".3" stop-color="#F2FFEE" stop-opacity=".9"></stop>
-          <stop offset=".6" stop-color="#F2FFEE" stop-opacity=".6"></stop>
-          <stop offset=".8" stop-color="#F2FFEE" stop-opacity=".3"></stop>
-          <stop offset="1" stop-color="#F2FFEE" stop-opacity="0"></stop>
+          <stop offset="0" stopColor="#F2FFEE"></stop>
+          <stop offset=".3" stopColor="#F2FFEE" stopOpacity=".9"></stop>
+          <stop offset=".6" stopColor="#F2FFEE" stopOpacity=".6"></stop>
+          <stop offset=".8" stopColor="#F2FFEE" stopOpacity=".3"></stop>
+          <stop offset="1" stopColor="#F2FFEE" stopOpacity="0"></stop>
         </radialGradient>
         <circle
-          transform-origin="center"
+          transformOrigin="center"
           fill="none"
           stroke="url(#a12)"
-          stroke-width="30"
-          stroke-linecap="round"
-          stroke-dasharray="200 1000"
-          stroke-dashoffset="0"
+          strokeWidth="30"
+          strokeLinecap="round"
+          strokeDasharray="200 1000"
+          strokeDashoffset="0"
           cx="100"
           cy="100"
           r="70"
@@ -44,12 +44,12 @@ const LoadingSpin = () => {
           ></animateTransform>
         </circle>
         <circle
-          transform-origin="center"
+          transformOrigin="center"
           fill="none"
           opacity=".2"
           stroke="#F2FFEE"
-          stroke-width="30"
-          stroke-linecap="round"
+          strokeWidth="30"
+          strokeLinecap="round"
           cx="100"
           cy="100"
           r="70"
