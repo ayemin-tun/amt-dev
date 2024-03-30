@@ -4,6 +4,7 @@ import { sendEmail } from "@/utils/sendEmail";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
+import LoadingSpin from "../LoadingSpin";
 
 const ContactForm = () => {
   const { register, handleSubmit, reset } = useForm();
@@ -53,8 +54,17 @@ const ContactForm = () => {
             {...register("message", { required: true })}
           ></textarea>
         </div>
-        <button className=" py-3 bg-gray-600 text-white md:w-[70%] w-full">
-          {isSending ? "Sending..." : "Send"}{" "}
+        <button
+          className=" py-3 bg-gray-600 text-white md:w-[70%] w-full flex justify-center items-center gap-2"
+          disabled={isSending}
+        >
+          {isSending ? (
+            <>
+              <LoadingSpin /> Sending
+            </>
+          ) : (
+            "Send"
+          )}{" "}
           {/* Change button text based on sending state */}
         </button>
       </form>
