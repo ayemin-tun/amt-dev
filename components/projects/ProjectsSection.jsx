@@ -1,5 +1,6 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 import ProjectData from "./ProjectData";
 const ProjectsSection = () => {
@@ -24,8 +25,10 @@ const ProjectsSection = () => {
           data-aos="zoom-in"
         >
           <div className="md:w-1/5 w-full p-1 mb-4">
-            <img
+            <Image
               src={project.images[0]}
+              width={100}
+              height={100}
               alt={project.name}
               className="md:w-[150px] md:h-[100px] w-full h-auto object-center"
             />
