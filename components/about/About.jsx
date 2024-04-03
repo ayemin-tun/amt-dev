@@ -49,7 +49,7 @@ const About = () => {
                 Name : <span className="font-medium">Aye Min Tun</span>
               </p>
               <p>
-                Birthday : <span className="font-medium">4 April, 2000</span>
+                Birthday : <span className="font-medium">9 April, 2000</span>
               </p>
             </div>
             <div>
