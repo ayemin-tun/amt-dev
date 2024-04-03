@@ -26,7 +26,7 @@ const ProjectsSection = () => {
         >
           <div className="md:w-1/5 w-full p-1 mb-4">
             <Image
-              src={project.images[0]}
+              src={project.image}
               width={100}
               height={100}
               alt={project.name}
