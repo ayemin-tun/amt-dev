@@ -11,7 +11,7 @@ import Template from "./template"
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" type="image/x-icon"></link>
+      <link rel="icon" href="/logo.png" type="image/x-icon"></link>
       <Template>
         <body className="bg-white dark:bg-slate-800">
           <ThemeProviderSection>
