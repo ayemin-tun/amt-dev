@@ -1,8 +1,8 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
 import { useState } from "react";
 import ProjectData from "./ProjectData";
+import ProjectDetail from "./ProjectDetail";
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [isAnimate, setIsAnimate] = useState(false);
@@ -25,7 +25,7 @@ const ProjectsSection = () => {
           data-aos="zoom-in"
         >
           <div className="md:w-1/5 w-full p-1 mb-4">
-            <Image
+            <img
               src={project.image}
               width={100}
               height={100}
@@ -85,8 +85,44 @@ const ProjectsSection = () => {
           className={`fixed right-0 top-0 dark:bg-gray-800 bg-slate-200 shadow-lg w-[0%] h-screen z-40 overflow-y-hidden
           }`}
         >
-          <button onClick={closeProjectDetail}>Show</button>
-          {selectedProject && <h1>{selectedProject.name}</h1>}
+          {/* close Button */}
+          <div className="w-full px-5 pt-3">
+            <span
+              onClick={closeProjectDetail}
+              className="font-extrabold text-3xl text-red-500 cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-x w-7 h-7"
+                viewBox="0 0 16 16"
+              >
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+              </svg>
+            </span>
+          </div>
+
+          {selectedProject && (
+            <>
+              <div className="w-full p-5">
+                <div className="md:flex mt-7">
+                  <div className="md:w-1/3 w-full">
+                    <img
+                      src={selectedProject.image}
+                      width={100}
+                      height={100}
+                      alt={selectedProject.name}
+                      className="w-full object-center"
+                    />
+                  </div>
+
+                  <ProjectDetail selectedProject={selectedProject} />
+                </div>
+              </div>
+            </>
+          )}
         </motion.div>
       </AnimatePresence>
     </>
