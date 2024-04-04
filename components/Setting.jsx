@@ -1,8 +1,9 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
-import LightDarkToggle from "./navigation/components/LightDarkToogle";
 const Setting = () => {
   const [isScrolling, setIsScrolling] = useState(false);
   const handleScroll = () => {
@@ -39,11 +40,19 @@ const Setting = () => {
         variants={NavAnimations}
         initial="initial"
         animate={isScrolling ? "animate" : "initial"}
-        className={` fixed right-3 bottom-3 animate-bounce ${
+        className={` fixed left-3 bottom-3 animate-bounce ${
           isScrolling ? "block" : "hidden"
-        } dark:bg-slate-600 bg-opacity-25 rounded-lg dark:border-none border`}
+        }`}
       >
-        <LightDarkToggle />
+        <Link href="/">
+          <Image
+            src="/Cartoon_space_rocket.png"
+            width={35}
+            height={35}
+            alt="top"
+            className=" -rotate-45 cursor-pointer"
+          />
+        </Link>
       </motion.span>
     </AnimatePresence>
   );
