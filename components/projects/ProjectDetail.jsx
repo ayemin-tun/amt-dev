@@ -2,7 +2,7 @@ import ButtonSection from "./ButtonSection";
 
 const ProjectDetail = ({ selectedProject }) => {
   return (
-    <div className="md:w-2/3 w-full h-[80vh] overflow-y-scroll md:px-7 py-0">
+    <div className="md:w-2/3 w-full md:h-[65vh] h-[55vh] overflow-y-scroll md:px-7 py-0">
       <h1 className="dark:text-white font-bold text-3xl mb-4 md:mt-0 mt-4 sticky top-0 dark:bg-slate-800 bg-slate-200 py-3">
         {selectedProject.name}
       </h1>
