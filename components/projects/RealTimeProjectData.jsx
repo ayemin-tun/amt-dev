@@ -2,6 +2,28 @@ const RealTimeProjectData = () => {
   return [
     {
       index: 1,
+      name: "MTF",
+      image: "/projects/mtf.png",
+      description: "Myanmar Tennis Federation, court booking website.",
+      detail:
+        "Tennis Court Booking Website for Myanmar Tennis Federation. Users can book courts, timeslots, coaches, facilities, etc. Users can also make booking payments through KBZPay Payment. In the Admin site, the admin can add, remove, and edit data for each item. Additionally, the system will display whether a booking is booked or expired based on specific business logic, along with other functionalities",
+      Language: [
+        "HTML",
+        "Css",
+        "Javascript",
+        "Tailwind",
+        "Next js(front end)",
+        "laravel",
+        "Filament(backend)",
+        "Mysql",
+      ],
+      githubLink: null,
+      demoLink: "https://myanmartennisfed.com",
+      adminLink: "http://admin.myanmartennisfed.com/admin/login",
+    },
+
+    {
+      index: 2,
       name: "LinBlock",
       image: "/projects/linblock.png",
       description:
@@ -23,7 +45,7 @@ const RealTimeProjectData = () => {
       adminLink: "https://admin.linblock.com/admin",
     },
     {
-      index: 2,
+      index: 3,
       name: "Great Safe Payroll",
       image: "/projects/greatsafe.png",
       description:
@@ -34,27 +56,6 @@ const RealTimeProjectData = () => {
       githubLink: null,
       demoLink: "https://greatsavepayroll.com",
       adminLink: null,
-    },
-    {
-      index: 3,
-      name: "MTF",
-      image: "/projects/mtf.png",
-      description: "Myanmar Tennis Federation, court booking website.",
-      detail:
-        "Tennis Court Booking Website for Myanmar Tennis Federation. Users can book courts, timeslots, coaches, facilities, etc. Users can also make booking payments through KBZPay Payment. In the Admin site, the admin can add, remove, and edit data for each item. Additionally, the system will display whether a booking is booked or expired based on specific business logic, along with other functionalities",
-      Language: [
-        "HTML",
-        "Css",
-        "Javascript",
-        "Tailwind",
-        "Next js(front end)",
-        "laravel",
-        "Filament(backend)",
-        "Mysql",
-      ],
-      githubLink: null,
-      demoLink: "https://myanmartennisfed.com",
-      adminLink: "http://admin.myanmartennisfed.com/admin/login",
     },
   ];
 };
