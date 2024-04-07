@@ -3,9 +3,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import ProjectData from "./ProjectData";
 import ProjectDetail from "./ProjectDetail";
-const ProjectsSection = () => {
+import RealTimeProjectData from "./RealTimeProjectData";
+const ProjectsSection = ({ type }) => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [isAnimate, setIsAnimate] = useState(false);
+  let projects = ProjectData();
   const openProjectDetail = (project) => {
     setSelectedProject(project);
     setIsAnimate(!isAnimate);
@@ -14,12 +16,15 @@ const ProjectsSection = () => {
     setIsAnimate(false);
     setSelectedProject(null);
   };
+  if (type && type === "realtime") {
+    projects = RealTimeProjectData();
+  }
   return (
     <>
-      {ProjectData().map((project) => (
+      {projects.map((project) => (
         <div
           key={project.index}
-          className="w-full h-auto mb-7 px-2 py-5 md:flex gap-2 cursor-pointer dark:hover:bg-black dark:hover:bg-opacity-25 hover:bg-slate-400 hover:bg-opacity-25 transition-colors duration-150 rounded-lg"
+          className="w-full h-auto mb-7 px-2 py-5 md:flex gap-2 cursor-pointer dark:hover:bg-black dark:hover:bg-opacity-25 hover:bg-slate-400 hover:bg-opacity-25 transition-colors duration-300 rounded-lg"
           id="projectDetail"
           onClick={() => openProjectDetail(project)}
           data-aos="zoom-in"
@@ -109,13 +114,15 @@ const ProjectsSection = () => {
               <div className="w-full p-5">
                 <div className="md:flex mt-7">
                   <div className="md:w-1/3 w-full">
-                    <img
-                      src={selectedProject.image}
-                      width={100}
-                      height={100}
-                      alt={selectedProject.name}
-                      className="w-full object-center"
-                    />
+                    <a href={selectedProject.image} target="_blank">
+                      <img
+                        src={selectedProject.image}
+                        width={100}
+                        height={100}
+                        alt={selectedProject.name}
+                        className="w-full object-center"
+                      />
+                    </a>
                   </div>
 
                   <ProjectDetail selectedProject={selectedProject} />
