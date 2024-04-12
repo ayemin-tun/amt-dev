@@ -63,11 +63,13 @@ const About = () => {
           </div>
 
           <div className="flex gap-3 mt-5" data-aos="zoom-in">
-            <button className="px-4 py-2 bg-gray-600 hover:bg-slate-200 duration-300 transition-transform hover:-translate-y-2 text-white text-sm hover:animate-bounce hover:text-black ">
-              Download CV
-            </button>
+            <a href="./cv/personal_Resume(Aye Min Tun).pdf" target="_blank">
+              <button className="px-4 py-2 bg-gray-600 hover:bg-slate-200 duration-300 transition-transform hover:-translate-y-2 text-white text-sm hover:text-black ">
+                Download CV
+              </button>
+            </a>
             <a href="mailto:amtamt547@gmail.com">
-              <button className="px-4 py-2 bg-slate-200 hover:bg-gray-600 duration-300 transition-transform hover:-translate-y-2 hover:text-white text-sm  hover:animate-bounce">
+              <button className="px-4 py-2 bg-slate-200 hover:bg-gray-600 duration-300 transition-transform hover:-translate-y-2 hover:text-white text-sm">
                 Hire Me
               </button>
             </a>
