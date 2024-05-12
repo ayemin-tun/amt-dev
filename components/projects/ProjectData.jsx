@@ -76,6 +76,26 @@ const ProjectData = () => {
       githubLink: "https://github.com/ayemin-tun/nyanpasu_music_ver2",
       demoLink: null,
     },
+    {
+      index: 5,
+      name: "Random Quiz",
+      image: "/projects/testknowledge.png",
+      description:
+        "The Random Quiz is a web application where users can engage in random quizzes on various topics.",
+      detail:
+        "The Random Quiz  is a web application where users can engage in random quizzes on various topics. Users will be presented with a series of multiple-choice questions randomly selected from a api. After answering the questions, users will receive immediate feedback on their performance, including the correct answers for questions they missed.",
+      Language: [
+        "HTML",
+        "Css",
+        "Javascript",
+        "Tailwind",
+        "Next js",
+        "Livewire",
+        "Zustand for (state management)",
+      ],
+      githubLink: "https://github.com/ayemin-tun/random_quiz.git",
+      demoLink: "https://randomquiz.vercel.app",
+    },
   ];
 };
 
