@@ -90,7 +90,6 @@ const ProjectData = () => {
         "Javascript",
         "Tailwind",
         "Next js",
-        "Livewire",
         "Zustand for (state management)",
       ],
       githubLink: "https://github.com/ayemin-tun/random_quiz.git",
