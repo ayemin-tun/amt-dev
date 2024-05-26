@@ -76,7 +76,7 @@ const ContactIconBox = () => {
 
       {/* Phone Link */}
       <a
-        href="tel:09778176676"
+        href="tel:09962052240"
         target="_blank"
         className="dark:hover:text-orange-600 hover:text-blue-800 transition-colors hover:shadow-md"
       >
