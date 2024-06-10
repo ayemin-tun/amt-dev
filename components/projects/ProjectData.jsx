@@ -78,6 +78,28 @@ const ProjectData = () => {
     },
     {
       index: 5,
+      name: "Tech Corner(Tech Product Ecommerce site)",
+      image: "/projects/techcorner.png",
+      description:
+        "This website is an ecommerce platform for tech products, where users can add items to their cart and enjoy various other ecommerce functionalities",
+      detail:
+        "Tech Product Ecommerce website: Customers can log in, register, and choose products based on brand and category. They can add items to their cart, proceed to checkout, and access other ecommerce functionalities. In the admin panel, administrators can manage products and view customer orders, enabling them to effectively handle and fulfill orders.",
+      Language: [
+        "HTML",
+        "Css",
+        "Javascript",
+        "Tailwind",
+        "Alpine Js",
+        "Laravel",
+        "Laravel Filament (Backend)",
+        "Livewire",
+        "Mysql",
+      ],
+      githubLink: "https://github.com/ayemin-tun/techCorner.git",
+      demoLink: null,
+    },
+    {
+      index: 6,
       name: "Random Quiz",
       image: "/projects/testknowledge.png",
       description:
@@ -90,7 +112,7 @@ const ProjectData = () => {
         "Javascript",
         "Tailwind",
         "Next js",
-        "Zustand for (state management)",
+        "Zustand (State Management)",
       ],
       githubLink: "https://github.com/ayemin-tun/random_quiz.git",
       demoLink: "https://randomquiz.vercel.app",
