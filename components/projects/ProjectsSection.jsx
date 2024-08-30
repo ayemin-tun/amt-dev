@@ -24,7 +24,7 @@ const ProjectsSection = ({ type }) => {
       {projects.map((project) => (
         <div
           key={project.index}
-          className="w-full h-auto mb-7 px-2 py-5 md:flex gap-2 cursor-pointer dark:hover:bg-black dark:hover:bg-opacity-25 hover:bg-slate-400 hover:bg-opacity-25 transition-colors duration-300 rounded-lg"
+          className="w-full h-auto mb-7 px-2 py-5 md:flex gap-2 cursor-pointer dark:hover:bg-black/10 hover:bg-slate-400 hover:bg-opacity-25 transition-colors duration-300 rounded-lg"
           id="projectDetail"
           onClick={() => openProjectDetail(project)}
           data-aos="zoom-in"

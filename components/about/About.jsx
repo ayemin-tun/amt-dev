@@ -4,7 +4,7 @@ import PageHeader from "../PageHeader";
 const About = () => {
   return (
     <div
-      className="w-full h-auto md:min-h-screen md:px-28 px-8 py-16 dark:bg-slate-800"
+      className="w-full h-auto md:min-h-screen md:px-28 px-8 py-16 dark:bg-slate-900"
       id="about"
     >
       <div className="w-full md:flex ">

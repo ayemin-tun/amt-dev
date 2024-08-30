@@ -3,7 +3,7 @@ import SkillsSection from "./SkillsSection";
 const Skills = () => {
   return (
     <div
-      className="w-full md:min-h-screen h-auto md:px-28 px-8 py-16 dark:bg-slate-800"
+      className="w-full md:min-h-screen h-auto md:px-28 px-8 py-16 dark:bg-slate-900"
       id="skills"
     >
       <div className="md:hidden md:w-1/5 w-full flex justify-center items-start border-l-2 border-gray-400 order-1">

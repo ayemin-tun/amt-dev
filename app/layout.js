@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="!scroll-smooth">
       <link rel="icon" href="/logo.png" type="image/x-icon"></link>
       <Template>
-        <body className="bg-white dark:bg-slate-800">
+        <body className="bg-white dark:bg-slate-900">
           <ThemeProviderSection>
             <Navigation />
             <Toaster position="bottom-left" />

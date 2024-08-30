@@ -36,21 +36,19 @@ const SkillsSection = () => {
     <>
       <div className="flex justify-center my-4">
         <button
-          className={`px-3 py-1 m-0 cursor-pointer ${
-            allSkills
-              ? "bg-white text-black dark:bg-gray-700 dark:text-white"
-              : "bg-gray-700 dark:bg-white text-white dark:text-black"
-          } rounded-s-md`}
+          className={`px-3 py-1 m-0 cursor-pointer ${allSkills
+            ? "bg-white text-black dark:bg-gray-700 dark:text-white"
+            : "bg-gray-700 dark:bg-white text-white dark:text-black"
+            } rounded-s-md`}
           onClick={() => setAllSKills(false)}
         >
           Skills
         </button>
         <button
-          className={`px-3 py-1 m-0 ${
-            allSkills
-              ? "bg-gray-700 text-white dark:bg-white dark:text-black"
-              : "bg-white dark:bg-gray-700 text-black dark:text-white"
-          } rounded-e-md`}
+          className={`px-3 py-1 m-0 ${allSkills
+            ? "bg-gray-700 text-white dark:bg-white dark:text-black"
+            : "bg-white dark:bg-gray-700 text-black dark:text-white"
+            } rounded-e-md`}
           onClick={() => handleAllSkillsClick()}
         >
           Details
@@ -66,9 +64,8 @@ const SkillsSection = () => {
               {skills.map((sk, index) => (
                 <ShowAnimation key={index}>
                   <div
-                    className={` text-white px-3 py-2 rounded-lg md:w-24 md:h-20 flex justify-center items-center hover:bg-slate-400 transition-colors duration-500 cursor-pointer ${
-                      skill === sk.name ? "bg-slate-700" : "bg-slate-500"
-                    }`}
+                    className={` text-white px-3 py-2 rounded-lg md:w-24 md:h-20 flex justify-center items-center hover:bg-slate-400 transition-colors duration-500 cursor-pointer ${skill === sk.name ? "bg-slate-700" : "bg-slate-500"
+                      }`}
                     onClick={() => handleSkillClick(sk.name, sk.percent)}
                   >
                     <p>{sk.name}</p>

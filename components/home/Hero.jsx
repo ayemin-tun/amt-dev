@@ -3,7 +3,7 @@ import ContactIconBox from "./ContactIconBox";
 
 const Hero = () => {
   return (
-    <header className="w-full h-screen dark:bg-slate-800 flex md:justify-center justify-start items-center dark:text-white transition-colors duration-500">
+    <header className="w-full h-screen dark:bg-slate-900 flex md:justify-center justify-start items-center dark:text-white transition-colors duration-500">
       <div className="w-[40rem] md:h-auto h-[400px]">
         <h1
           className="font-extrabold text-5xl px-6 mb-2 md:text-center text-gray-600 dark:text-slate-300"
@@ -18,7 +18,7 @@ const Hero = () => {
           Full Statck Developer
         </h2>
         <p
-          className="lg:text-medium text-sm md:text-center container mx-auto md:px-10 px-6"
+          className="self-start lg:text-medium text-lg container mx-auto md:px-10 px-6"
           data-aos="fade-left"
         >
           My mission is to design and develop a website that you and your

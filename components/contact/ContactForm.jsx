@@ -29,7 +29,7 @@ const ContactForm = () => {
             type="text"
             name="name"
             id=""
-            className="md:w-[70%] w-full dark:border-0 border-2 border-gray-400 text-base p-1"
+            className="md:w-[70%] w-full dark:border-0 border-2 bg-white/5 border-gray-400 text-base p-1"
             {...register("name", { required: true })}
           />
         </div>
@@ -39,7 +39,7 @@ const ContactForm = () => {
             type="email"
             name="email"
             id=""
-            className="md:w-[70%] w-full dark:border-0 border-2 border-gray-400 text-base p-1"
+            className="md:w-[70%] w-full dark:border-0 border-2 bg-white/5 border-gray-400 text-base p-1"
             {...register("email", { required: true })}
           />
         </div>
@@ -49,7 +49,7 @@ const ContactForm = () => {
             rows="4"
             name="message"
             id=""
-            className="md:w-[70%] w-full dark:border-0 border-2 border-gray-400 text-base p-1"
+            className="md:w-[70%] w-full dark:border-0 border-2 bg-white/5 border-gray-400 text-base p-1"
             {...register("message", { required: true })}
           ></textarea>
         </div>
