@@ -10,9 +10,6 @@ const ProjectData = () => {
         "This is my first fully functional website, dedicated to uploading songs associated with anime. On the client side, users can search for music, listen to it, download their favorite tracks, and even request songs from the admin. On the admin side, administrators can add, delete, search, and edit songs. Additionally, they can review and manage song requests submitted by users.",
       Language: ["HTML", "Css", "Javascript", "Bootstrap", "PHP", "MySql"],
       githubLink: "https://github.com/ayemin-tun/nyanpasu_music",
-      demoLink: "http://nyanpasumusic.epizy.com",
-      adminLink:
-        "http://nyanpasumusic.epizy.com/include_nyanpasu_admin/admin.php",
     },
     {
       index: 2,
