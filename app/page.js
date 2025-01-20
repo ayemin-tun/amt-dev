@@ -1,6 +1,5 @@
 import Setting from "@/components/Setting"
 import About from "@/components/about/About"
-import Contact from "@/components/contact/Contact"
 import Hero from "@/components/home/Hero"
 import Projects from "@/components/projects/Projects"
 import Skills from "@/components/skills/Skills"
@@ -14,7 +13,7 @@ const page = () => {
       <Skills />
       <Projects />
       {/* <ScrollSection /> */}
-      <Contact />
+      {/* <Contact /> */}
     </div>
   )
 }

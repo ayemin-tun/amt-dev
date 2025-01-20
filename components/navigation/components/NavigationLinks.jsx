@@ -22,11 +22,11 @@ const NavigationLinks = () => {
       path: "/#projects",
       id: "projects",
     },
-    {
-      title: "Contact",
-      path: "/#contact",
-      id: "contact",
-    },
+    // {
+    //   title: "Contact",
+    //   path: "/#contact",
+    //   id: "contact",
+    // },
   ];
   return (
     <>
