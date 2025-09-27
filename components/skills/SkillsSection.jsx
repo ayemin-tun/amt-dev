@@ -15,6 +15,8 @@ const SkillsSection = () => {
     { name: "React", percent: 70 },
     { name: "Next Js", percent: 75 },
     { name: "Astro Js", percent: 65 },
+    { name: "Python", percent: 50 },
+    { name: "Django", percent: 60 },
   ];
 
   const [skill, setSkill] = useState(null);

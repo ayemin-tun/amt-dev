@@ -1,6 +1,17 @@
 import profile from "@/public/profile.jpg";
 import Image from "next/image";
 import PageHeader from "../PageHeader";
+const calculateAge = (birthDate) => {
+  const today = new Date();
+  const birth = new Date(birthDate);
+  let age = today.getFullYear() - birth.getFullYear();
+  const monthDiff = today.getMonth() - birth.getMonth();
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+    age--;
+  }
+  return age;
+};
+
 const About = () => {
   return (
     <div
@@ -34,7 +45,7 @@ const About = () => {
             <span className="text-blue-700 dark:text-orange-500 font-bold uppercase transition-colors duration-500">
               Aye Min Tun
             </span>
-            , a 23-year-old junior web developer. I&apos;m enthusiastic about
+            , a {calculateAge("2000-04-09")}-year-old junior web developer. I&apos;m enthusiastic about
             problem-solving and communication. With a portfolio of projects,
             I&apos;m eager to apply my skills and expand my web development
             expertise on real-world projects.

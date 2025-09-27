@@ -2,7 +2,7 @@ const ProjectData = () => {
   return [
     {
       index: 1,
-      name: "Nyanpasu Music",
+      name: "Anime Music Translation",
       image: "/projects/nyanpasu_music.png",
       description:
         "This is a website where you can discover,enjoy and request translated music video that is associated with anime.",
@@ -113,6 +113,26 @@ const ProjectData = () => {
       ],
       githubLink: "https://github.com/ayemin-tun/random_quiz.git",
       demoLink: "https://randomquiz.vercel.app",
+    },
+    {
+      index: 7,
+      name: "Service Links (school project)",
+      image: "/projects/servicelinks.png",
+      description:
+        "Service Link is a team-built school project that provides an online platform to connect customers with local service providers such as electricians, plumbers, and pest control experts. The system allows users to search providers by name, through vector search, or by location (“near me”), and offers booking, registration, and an admin dashboard for management.",
+      detail: "Service Link is a collaborative school project developed by three classmates to create an online platform that connects customers with local service providers such as electricians, plumbers, and pest control professionals. The system allows users to search providers by name, through vector search, or by location ('near me'), and supports booking, registration, and an admin dashboard for managing users, providers, and appointments. Overall, Service Link combines advanced search technologies with essential service-booking functionality, demonstrating both technical innovation and effective teamwork.",
+      Language: [
+        "HTML",
+        "Css",
+        "Javascript",
+        "Tailwind",
+        "Python",
+        "Alpine Js",
+        "Django",
+        "PostgreSQL",
+      ],
+      githubLink: null,
+      demoLink: null,
     },
   ];
 };
