@@ -54,10 +54,10 @@ const ProjectData = () => {
     },
     {
       index: 4,
-      name: "Nyanpasu Music",
+      name: "Anime Music",
       image: "/projects/nyanpasu_music2.jpg",
       description:
-        "This is also the Polish version of the Nyanpasu Music website, where you can discover, enjoy, and request translated music videos associated with anime. Additionally, it features a more attractive design and added more control functionality for admin.",
+        "This is also the Polish version of the Anime Music Translation website, where you can discover, enjoy, and request translated music videos associated with anime. Additionally, it features a more attractive design and added more control functionality for admin.",
       detail:
         "This is music uploading songs associated with anime. On the client side, users can search for music, listen to it, download their favorite tracks, and even request songs from the admin. On the admin side, administrators can add, delete, search, and edit songs, as well as view requested music. Using Laravel Filament for the admin panel, admins can manage roles and permissions for users who log in to the admin dashboard and other functionality. (Some features are in the development state)",
       Language: [
