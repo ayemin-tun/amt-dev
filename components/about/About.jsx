@@ -1,11 +1,14 @@
-import profile from "@/public/profile.jpg";
+import profile from "@/public/profile.png";
 import Image from "next/image";
 import PageHeader from "../PageHeader";
 const calculateAge = (birthDate) => {
   const today = new Date();
-  const birth = new Date(birthDate);
+  const [year, month, day] = birthDate.split("-").map(Number);
+  const birth = new Date(year, month - 1, day);
+
   let age = today.getFullYear() - birth.getFullYear();
   const monthDiff = today.getMonth() - birth.getMonth();
+
   if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
     age--;
   }
