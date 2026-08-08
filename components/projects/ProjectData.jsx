@@ -1,16 +1,16 @@
 const ProjectData = () => {
   return [
-    {
-      index: 1,
-      name: "Anime Music Translation",
-      image: "/projects/nyanpasu_music.png",
-      description:
-        "This is a website where you can discover,enjoy and request translated music video that is associated with anime.",
-      detail:
-        "This is my first fully functional website, dedicated to uploading songs associated with anime. On the client side, users can search for music, listen to it, download their favorite tracks, and even request songs from the admin. On the admin side, administrators can add, delete, search, and edit songs. Additionally, they can review and manage song requests submitted by users.",
-      Language: ["HTML", "Css", "Javascript", "Bootstrap", "PHP", "MySql"],
-      githubLink: "https://github.com/ayemin-tun/nyanpasu_music",
-    },
+    // {
+    //   index: 1,
+    //   name: "Anime Music Translation",
+    //   image: "/projects/nyanpasu_music.png",
+    //   description:
+    //     "This is a website where you can discover,enjoy and request translated music video that is associated with anime.",
+    //   detail:
+    //     "This is my first fully functional website, dedicated to uploading songs associated with anime. On the client side, users can search for music, listen to it, download their favorite tracks, and even request songs from the admin. On the admin side, administrators can add, delete, search, and edit songs. Additionally, they can review and manage song requests submitted by users.",
+    //   Language: ["HTML", "Css", "Javascript", "Bootstrap", "PHP", "MySql"],
+    //   githubLink: "https://github.com/ayemin-tun/nyanpasu_music",
+    // },
     {
       index: 2,
       name: "Real Chat",
