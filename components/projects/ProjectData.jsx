@@ -134,6 +134,27 @@ const ProjectData = () => {
       githubLink: null,
       demoLink: null,
     },
+    {
+      index: 8,
+      name: "Disaster Risk Analysis System",
+      image: "/projects/disaster_analysis.png",
+      description:
+        "A data mining and machine learning system that analyzes 24 years of global disaster records to predict whether a future disaster event will be high or low severity, built with an interactive Streamlit dashboard.",
+      detail:
+        "This project uses the EM-DAT International Disaster Database (16,155 records, 2000–2024) to classify disaster severity as high or low based on the 75th percentile of total deaths and people affected. The pipeline covers feature selection using ANOVA F-Score, Mutual Information, and Gini Importance, missing value imputation, One-Hot/Label Encoding, StandardScaler normalization, and time-based train/test splitting (train on data before 2023, test on 2023 onward) to simulate real-world forecasting. Four models — Logistic Regression, Decision Tree, Random Forest, and XGBoost — were trained and compared using Stratified 5-Fold Cross-Validation, with SMOTE and class weighting applied to handle severe class imbalance. XGBoost was selected as the champion model (70.2% CV accuracy, 0.754 AUC, 0.69 F1-Score). SHAP was integrated to explain individual predictions, and the final model was deployed as an interactive Streamlit dashboard featuring a global disaster map, trend analysis, model comparison, and explainable predictions for non-technical stakeholders.",
+      Language: [
+        "Python",
+        "Pandas",
+        "Scikit-learn",
+        "XGBoost",
+        "SHAP",
+        "SMOTE",
+        "Plotly",
+        "Streamlit",
+      ],
+      githubLink: "https://github.com/ayemin-tun/disaster_clf_proj.git",
+      demoLink: "https://disasterclfproj-5569opsyj9paohr57wafqh.streamlit.app/",
+    },
   ];
 };
 
